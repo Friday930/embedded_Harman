@@ -2,13 +2,14 @@
 
 int main(){
 
-   float ft = 1.234567890123456789;
-   double db = 1.234567890123456789;
+   int a = 5, b = 5;
+   int pre, post;
 
-    printf("hello world!\n");
-    // printf("sum = %d + %d = %d\n", a, b, c);
-    printf("float형 변수의 값 : %.20f\n", ft);
-    printf("double형 변수의 값 : %.20lf\n", db);
+   pre = (++a) * 3;
+   post = (b++) * 3;
+
+    printf("초기값 a = %d, b = %d\n", a, b);
+    printf("전위형 : (++a) * 3 = %d, 후위형 : (b++) * 3 = %d\n", pre, post);
 
     return 0;
 }
